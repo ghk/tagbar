@@ -1696,7 +1696,7 @@ function! s:OpenWindow(flags) abort
     let eventignore_save = &eventignore
     set eventignore=all
 
-    let openpos = g:tagbar_left ? 'topleft vertical ' : 'botright vertical '
+    let openpos = g:tagbar_left ? 'lefta vertical ' : 'rightb vertical '
     exe 'silent keepalt ' . openpos . g:tagbar_width . 'split ' . '__Tagbar__'
 
     let &eventignore = eventignore_save
